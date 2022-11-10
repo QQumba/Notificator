@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "r2xoV8iHioy1vmNeUkfheDPcP1lsmrau/djJRLd+9+8=",
+  "Source": "Notificator.Client",
+  "BasePath": "_content/Notificator.Client",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

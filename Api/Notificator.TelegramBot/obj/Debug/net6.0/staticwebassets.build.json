@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zT6CQPwxnb2++ynarsMu2abh2NuxqC3VSf88T4Prp+8=",
+  "Source": "Notificator.TelegramBot",
+  "BasePath": "_content/Notificator.TelegramBot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

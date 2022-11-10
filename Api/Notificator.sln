@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notificator", "Notificator\Notificator.csproj", "{52905A34-C945-4288-88F2-3AADE7F90117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notificator.Client", "Notificator.Client\Notificator.Client.csproj", "{7A939340-B79A-4BA4-818A-7495D64AAA47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notificator.TelegramBot", "Notificator.TelegramBot\Notificator.TelegramBot.csproj", "{50133425-AF23-4CCC-ACCC-97A3D7AB39FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notificator.Data", "Notificator.Data\Notificator.Data.csproj", "{EDFCD413-8A8B-4A2E-AAA4-15EA2C7AC621}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52905A34-C945-4288-88F2-3AADE7F90117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52905A34-C945-4288-88F2-3AADE7F90117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52905A34-C945-4288-88F2-3AADE7F90117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52905A34-C945-4288-88F2-3AADE7F90117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A939340-B79A-4BA4-818A-7495D64AAA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A939340-B79A-4BA4-818A-7495D64AAA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A939340-B79A-4BA4-818A-7495D64AAA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A939340-B79A-4BA4-818A-7495D64AAA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50133425-AF23-4CCC-ACCC-97A3D7AB39FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50133425-AF23-4CCC-ACCC-97A3D7AB39FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50133425-AF23-4CCC-ACCC-97A3D7AB39FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50133425-AF23-4CCC-ACCC-97A3D7AB39FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDFCD413-8A8B-4A2E-AAA4-15EA2C7AC621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFCD413-8A8B-4A2E-AAA4-15EA2C7AC621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFCD413-8A8B-4A2E-AAA4-15EA2C7AC621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFCD413-8A8B-4A2E-AAA4-15EA2C7AC621}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
