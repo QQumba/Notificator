@@ -3,5 +3,6 @@
 public enum ConsumerType
 {
     Webhook,
-    Telegram
+    Telegram,
+    Email,
 }

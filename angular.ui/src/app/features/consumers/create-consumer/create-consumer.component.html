@@ -1,0 +1,29 @@
+<form class="small-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Leave a comment</mat-label>
+    <mat-select [(ngModel)]="consumer.consumerType" name="consumerType">
+      <mat-option *ngFor="let type of consumerTypes" [value]="type">
+        {{ type }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>{{ getAddressType() }}</mat-label>
+    <input [(ngModel)]="consumer.address" matInput name="address" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Topic Id</mat-label>
+    <input
+      [(ngModel)]="consumer.topicId"
+      matInput
+      type="number"
+      name="topicId"
+    />
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="submitForm()">
+    Add consumer
+  </button>
+</form>

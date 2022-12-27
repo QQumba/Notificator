@@ -1,21 +1,13 @@
-﻿using Notificator.Data.Entities.Enums;
-
-namespace Notificator.Data.Entities;
+﻿namespace Notificator.Data.Entities;
 
 public class Topic
 {
     public long TopicId { get; set; }
-    
-    public long ChannelId { get; set; }
-
-    public string StringId { get; set; } = null!;
-
-    public string Description { get; set; } = null!;
-    
-    public ConsumerType ConsumerType { get; set; }
 
     /// <summary>
-    /// Refers to a mechanism to transform data for  
+    /// Unique name to identify the topic.
     /// </summary>
-    public long? DataTransformId { get; set; }
+    public string Name { get; set; } = null!;
+
+    public string? Description { get; set; }
 }

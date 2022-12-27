@@ -4,12 +4,10 @@ public class Message
 {
     public long MessageId { get; set; }
 
-    public string JsonPayload { get; set; } = null!;
-
-    public long ClientId { get; set; }
+    public string Payload { get; set; } = null!;
 
     /// <summary>
-    /// Defines recipient channels of that message.
+    /// Defines recipient channel of that message.
     /// </summary>
-    public IEnumerable<long> ChannelIds { get; set; } = null!;
+    public long TopicId { get; set; }
 }

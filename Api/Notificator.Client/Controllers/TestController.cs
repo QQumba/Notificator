@@ -6,9 +6,22 @@ namespace Notificator.Controllers;
 [Route("test")]
 public class TestController : ControllerBase
 {
-    [HttpGet]
-    public ActionResult<string> SendMessage(string message)
+    private readonly ILogger<TestController> _logger;
+
+    public TestController(ILogger<TestController> logger)
     {
-        return message;
+        _logger = logger;
     }
+
+    [HttpPost]
+    public ActionResult<string> SendMessage(MessageData message)
+    {
+        _logger.LogError("message received: {Message}", message.Data);
+        return message.Data;
+    }
+}
+
+public class MessageData
+{
+    public string Data { get; set; }
 }

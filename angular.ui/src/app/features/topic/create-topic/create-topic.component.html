@@ -1,0 +1,15 @@
+<form class="small-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input [(ngModel)]="topic.name" matInput name="name" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Description</mat-label>
+    <input [(ngModel)]="topic.description" matInput name="description" />
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="createTopic()">
+    Create topic
+  </button>
+</form>

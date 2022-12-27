@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <mat-icon color="accent">published_with_changes</mat-icon>
+  <span>Notificator </span>
+  <a
+    mat-flat-button
+    routerLink="/topics"
+    routerLinkActive="mat-accent"
+    color="primary"
+    >Topics</a
+  >
+  <a
+    mat-flat-button
+    routerLink="/consumers"
+    routerLinkActive="mat-accent"
+    color="primary"
+    >Consumers</a
+  >
+</mat-toolbar>
+<main>
+  <router-outlet></router-outlet>
+</main>

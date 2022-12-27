@@ -5,13 +5,18 @@ namespace Notificator.Data;
 
 public class NotificatorDbContext : DbContext
 {
-    public DbSet<Client> Clients { get; set; } = null!;
+    public NotificatorDbContext(DbContextOptions options) : base(options)
+    {
+    }
 
-    public DbSet<Channel> Channels { get; set; } = null!;
+    public virtual DbSet<Message> Messages { get; set; } = null!;
 
-    public DbSet<Message> Messages { get; set; } = null!;
+    public virtual DbSet<Consumer> Consumers { get; set; } = null!;
 
-    public DbSet<Consumer> Consumers { get; set; } = null!;
-    
-    public DbSet<Topic> Topics { get; set; } = null!;
+    public virtual DbSet<Topic> Topics { get; set; } = null!;
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.HasDefaultSchema("notificator");
+    }
 }

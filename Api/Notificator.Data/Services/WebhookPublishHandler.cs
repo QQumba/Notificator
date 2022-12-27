@@ -1,16 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Net.Http.Json;
+using Microsoft.EntityFrameworkCore;
+using Notificator.Data.Clients;
+using Notificator.Data.DataTransferObjects;
 using Notificator.Data.Entities;
 using Notificator.Data.Entities.Enums;
-using Notificator.Data.Util;
 
 namespace Notificator.Data.Services;
 
 public class WebhookPublishHandler : IPublishHandler
 {
-    private readonly HttpClient _client;
+    private readonly IWebhookClient _client;
     private readonly NotificatorDbContext _context;
 
-    public WebhookPublishHandler(HttpClient client, NotificatorDbContext context)
+    public WebhookPublishHandler(IWebhookClient client, NotificatorDbContext context)
     {
         _client = client;
         _context = context;
@@ -19,24 +21,19 @@ public class WebhookPublishHandler : IPublishHandler
     public async Task HandlePublish(Message message)
     {
         var consumers = await _context.Consumers
-            .Where(x => x.ConsumerType == ConsumerType.Webhook && message.ChannelIds.Contains(x.ChannelId))
+            .Where(x => x.TopicId == message.TopicId && x.ConsumerType == ConsumerType.Webhook)
             .ToListAsync();
-        
+
         foreach (var consumer in consumers)
         {
-            var url = consumer.GetWebhookConsumerAddress()!.Url;
-            await CallWebhook(url, message.JsonPayload);
+            await CallWebhook(consumer.Address, message.Payload);
         }
     }
 
     private async Task CallWebhook(string url, string jsonPayload)
     {
-        var content = new StringContent(jsonPayload);
-        await _client.PostAsync(url, content);
+        var message = new MessageData { Data = jsonPayload };
+        var content = JsonContent.Create(message);
+        await _client.NotifyAsync(url, content);
     }
-}
-
-public class WebhookConsumerAddress
-{
-    public string Url { get; set; } = null!;
 }

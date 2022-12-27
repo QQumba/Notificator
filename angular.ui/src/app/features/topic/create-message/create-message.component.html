@@ -1,0 +1,15 @@
+<form class="small-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Payload</mat-label>
+    <input [(ngModel)]="message.payload" matInput name="payload" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Topic Id</mat-label>
+    <input [(ngModel)]="message.topicId" matInput type="number" name="topicId" />
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="publishMessage()">
+    Publish message
+  </button>
+</form>

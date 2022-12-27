@@ -6,9 +6,7 @@ public class Consumer
 {
     public long ConsumerId { get; set; }
 
-    public long ChannelId { get; set; }
-
-    public string JsonAddress { get; set; } = null!;
+    public string Address { get; set; } = null!;
 
     public ConsumerType ConsumerType { get; set; }
 

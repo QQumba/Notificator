@@ -6,9 +6,9 @@ public class ConsumerDto
 {
     public long ConsumerId { get; set; }
 
-    public long ChannelId { get; set; }
+    public string Address { get; set; } = null!;
 
-    public string JsonAddress { get; set; } = null!;
+    public long TopicId { get; set; }
 
     public ConsumerType ConsumerType { get; set; }
 }

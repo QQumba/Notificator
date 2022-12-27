@@ -8,6 +8,6 @@ public static class ServiceCollectionExtensions
 {
     public static void AddValidators(this IServiceCollection services)
     {
-        services.AddScoped<IValidator<Message>, MessageValidator>();
+        services.AddScoped<IValidator<MessageCreateDto>, MessageValidator>();
     }
 }

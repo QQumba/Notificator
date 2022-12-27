@@ -1,0 +1,12 @@
+D:\projects\Notificator\Api\Notificator.Data\bin\Debug\net6.0\Notificator.Data.deps.json
+D:\projects\Notificator\Api\Notificator.Data\bin\Debug\net6.0\Notificator.Data.dll
+D:\projects\Notificator\Api\Notificator.Data\bin\Debug\net6.0\Notificator.Data.pdb
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.csproj.AssemblyReference.cache
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.AssemblyInfoInputs.cache
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.AssemblyInfo.cs
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.csproj.CoreCompileInputs.cache
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.dll
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\refint\Notificator.Data.dll
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\Notificator.Data.pdb
+D:\projects\Notificator\Api\Notificator.Data\obj\Debug\net6.0\ref\Notificator.Data.dll
