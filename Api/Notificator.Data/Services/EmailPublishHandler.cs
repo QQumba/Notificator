@@ -45,7 +45,7 @@ public class EmailPublishHandler : IPublishHandler
             smtp.Host = "smtp.gmail.com"; //for gmail host  
             smtp.EnableSsl = true;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("mykyta.knysh@nure.ua", "AYp4Wro5");
+            smtp.Credentials = new NetworkCredential("mykyta.knysh@nure.ua", "");
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.Send(message);
         }
